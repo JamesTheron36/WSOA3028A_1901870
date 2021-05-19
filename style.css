@@ -1,7 +1,6 @@
 .title{
 	text-align: center;
-  text-shadow: 4px 4px 5px teal,
-               2px 2px 1px purple;
+  text-shadow: 4px 4px 5px teal, 2px 2px 1px purple;
 }
 #subTitle{
 	text-align: center;
@@ -23,23 +22,23 @@
 }
 
 h3{
-    display: block;
-    font-size: 1.17em;
-    margin-block-start: 10px;
-    margin-block-end: 5px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 10px;
+  margin-block-end: 5px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 h1 {
-    display: block;
-    font-size: 2em;
-    margin-block-start: 10px;
-    margin-block-end: 1px;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+  display: block;
+  font-size: 2em;
+  margin-block-start: 10px;
+  margin-block-end: 1px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
 }
 
 .blog{
