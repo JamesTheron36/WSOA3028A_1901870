@@ -1,12 +1,53 @@
 .title{
 	text-align: center;
+  text-shadow: 4px 4px 5px teal,
+               2px 2px 1px purple;
 }
 #subTitle{
 	text-align: center;
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1px;
+  margin-block-end: 5px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+.preview{
+  text-align: center;
+  margin-block-start: 10px;
+  margin-block-end: 5px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 10px;
+    margin-block-end: 5px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 10px;
+    margin-block-end: 1px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 .blog{
 	text-align: center;
+  padding-top: 5px;
+  padding-right: 400px;
+  padding-bottom: 5px;
+  padding-left: 400px;
 }
 /* Add a black background color to the top navigation */
 .topnav {
@@ -14,6 +55,12 @@
   overflow: hidden;
 }
 
+.previewImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 /* Style the links inside the navigation bar */
 .topnav a {
   float: right;
@@ -22,12 +69,37 @@
   padding: 15px 25px;
   text-decoration: none;
   font-size: 17px;
+  
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #D3D3D3;
   color: black;
+}
+
+.preview h3{
+  background-color: powderblue;
+  margin-left: 10px;
+
+}
+
+.preview a {
+  background-color: orange;
+  padding-top: 1px;
+  padding-right: 7px;
+  padding-bottom: 2px;
+  padding-left: 7px;
+  margin-top: 5px;
+  margin-block-start: 10px;
+  margin-block-end: 10px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  
+
+}
+.preview h3 {
+  padding-bottom: 1px
 }
 
 /* Add a color to the active/current link */
