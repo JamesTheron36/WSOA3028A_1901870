@@ -5,6 +5,7 @@
   font-weight: bold;
 }
 #subTitle{
+  text-shadow: 4px 4px 5px #6930c3, 2px 2px 1px #80ffdb;
 	text-align: center;
   display: block;
   font-size: 30px;
