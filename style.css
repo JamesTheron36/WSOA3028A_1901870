@@ -1,15 +1,19 @@
-.title{
+.logo h1{
 	text-align: center;
   text-shadow: 4px 4px 5px #6930c3, 2px 2px 1px #80ffdb;
   color: #252525;
   font-weight: bold;
 }
-#subTitle{
+.logo h2{
+  color: #252525;
   text-shadow: 4px 4px 5px #6930c3, 2px 2px 1px #80ffdb;
 	text-align: center;
   display: block;
   font-size: 30px;
   font-weight: bold;
+}
+.logo{
+  padding-bottom: 35px;
 }
 
 *{
@@ -17,14 +21,7 @@
   padding: 0px;
   box-sizing: border-box;
 }
-.preview{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  
 
-}
 
 h3{
   display: block;
@@ -45,53 +42,100 @@ h1 {
   margin-inline-end: 0px;
   font-weight: bold;
 }
-
-.blog{
-	text-align: center;
+p{
+  line-height: 1.5;
+  bottom-padding: 50px 
+}
+.aboutme p{
+  text-align: left;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
-  font-size: 23px
-
+  width: 80%;
+  font-size: 23px;
+  padding-bottom: 20px;
+  color: #252525;
 }
 
-.previewImage{
+.blog p{
+	text-align: left;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  font-size: 23px;
+  padding-bottom: 20px;
+  color: #252525;
+}
+
+.blog h2{
+  text-align: center;
+  color: #252525;
+  font-weight: bold;
+}
+
+
+.prev h3{
+  background-color: #64dfdf;
+  padding-bottom: 1px
+  color: #252525;
+}
+.prev img{
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
+.prev div{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
-.preview h3{
+.prev a{
   background-color: #64dfdf;
-  padding-bottom: 1px
-  color: #252525;
-}
-
-body{
-  background-color: #80ffdb;
-}
-.preview a {
-  background-color: #6930c3;
   padding-top: 1px;
   padding-right: 7px;
   padding-bottom: 2px;
   padding-left: 7px;
-  margin-top: 5px;
-  margin-block-start: 10px;
-  margin-block-end: 10px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   color: #252525;
-  
-
 }
 
 
 
 
+body{
+  background-color: #80ffdb;
+}
+
+.wireframe img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.wireframe h1{
+  text-align: center;
+  color: #252525;
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.wireframe{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.ref {
+  padding-top: 30px;
+  text-align: center;
+  color: #252525;
+  font-weight: bold;
+  font-size: 20px;
+}
 
 nav{
   display: flex;
@@ -99,16 +143,39 @@ nav{
   align-items: center;
   min-height: 8vh;
   background-color: #64dfdf;
-  font-family: 'Poppins', sans-serif;
 }
-.logo{
+.greeting{
   color: #252525;
   text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 17px;
+  letter-spacing: 2.5px;
+  font-size: 24px;
   font-weight: bold;
 
 }
+
+.blog-nav li{
+  list-style: none;
+
+}
+
+
+
+.blog-nav{
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+
+  
+}
+
+.blog-nav a{
+
+  color: #252525;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .nav-links li{
   list-style: none;
 }
@@ -125,7 +192,11 @@ nav{
   text-decoration: none;
   letter-spacing: 3px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 20px;
+}
+
+.nav-links a:hover{
+  background-color: #80ffdb;
 }
 
 .burger{
