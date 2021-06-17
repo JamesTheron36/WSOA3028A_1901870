@@ -26,20 +26,14 @@
 h3{
   display: block;
   font-size: 28px;
-  margin-block-start: 10px;
-  margin-block-end: 5px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  
   font-weight: bold;
 }
 
 h1 {
   display: block;
   font-size: 50px;
-  margin-block-start: 10px;
-  margin-block-end: 1px;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  
   font-weight: bold;
 }
 p{
@@ -169,15 +163,33 @@ nav{
 }
 
 .blog-nav a{
-
   color: #252525;
   text-decoration: none;
   font-weight: bold;
   font-size: 20px;
+  display: block;
+  
+
 }
 
 .nav-links li{
   list-style: none;
+  display: block;
+  position: relative;
+  padding: 10px; 
+
+}
+
+.nav-links li ul{
+  display: none;
+  position: absolute;
+  background-color: #64dfdf;
+  margin-top: 11px;
+  border-radius: 4px 4px 4px;
+  width: 120px;
+
+
+
 }
 
 .nav-links{
@@ -195,8 +207,14 @@ nav{
   font-size: 20px;
 }
 
-.nav-links a:hover{
+.nav-links li:hover {
   background-color: #80ffdb;
+}
+.nav-links li ul li:hover {
+  background-color: #6930c3;
+}
+.nav-links li:hover ul{
+  display: block;
 }
 
 .burger{
@@ -238,6 +256,9 @@ nav{
   }
   .nav-links li{
     opacity: 0;
+  }
+  .nav-links li:hover ul{
+    display: none;
   }
 
   .burger{

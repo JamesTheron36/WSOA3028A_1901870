@@ -29,3 +29,20 @@ const app = () =>{
 }
 
 app();
+
+var x = document.getElementsByTagName("A");
+var links = Array.from(x)
+var click = new Audio();
+click.src = "Sounds/ButtonClick.mp3";
+console.log(links[0])
+
+
+links.forEach(addSound);
+
+function addSound(item) {
+  item.addEventListener('click', event => {
+    click.play();
+    console.log("clicked");
+  })
+}
+
