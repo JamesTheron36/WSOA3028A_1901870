@@ -41,6 +41,7 @@ links.forEach(addSound);
 
 function addSound(item) {
   item.addEventListener('click', event => {
+    click.load();
     click.play();
     console.log("clicked");
   })
