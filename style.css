@@ -51,6 +51,14 @@ p{
   color: #252525;
 }
 
+.aboutme h2{
+  padding: 20px 10px;
+  color: #252525;
+  text-align: center;
+  display: block;
+  font-size: 25px;
+  font-weight: bold;
+}
 .blog p{
 	text-align: left;
   display: flex;
