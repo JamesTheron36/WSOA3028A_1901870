@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
 .logo h1{
 	text-align: center;
   text-shadow: 4px 4px 5px #6930c3, 2px 2px 1px #80ffdb;
@@ -13,16 +16,19 @@
   font-weight: bold;
 }
 .logo{
-  padding-bottom: 35px;
+  padding-bottom: 5px;
 }
 
-*{
+*:not(.weather){
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Castoro', serif;
 }
 
-
+.dropdown{
+  height:50%;
+}
 h3{
   display: block;
   font-size: 28px;
@@ -38,7 +44,7 @@ h1 {
 }
 p{
   line-height: 1.5;
-  bottom-padding: 50px 
+   
 }
 .aboutme p{
   text-align: left;
@@ -50,7 +56,20 @@ p{
   padding-bottom: 20px;
   color: #252525;
 }
-
+.media {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.media li{
+  list-style: none;
+  margin: 20px;
+}
+.media li img{
+  width: 44px;
+  height: 44px; 
+}
 .aboutme h2{
   padding: 20px 10px;
   color: #252525;
@@ -79,7 +98,7 @@ p{
 
 .prev h3{
   background-color: #64dfdf;
-  padding-bottom: 1px
+  padding-bottom: 1px;
   color: #252525;
 }
 .prev img{
@@ -184,7 +203,8 @@ nav{
   list-style: none;
   display: block;
   position: relative;
-  padding: 10px; 
+  padding: 10px;
+  
 
 }
 
@@ -195,7 +215,8 @@ nav{
   margin-top: 11px;
   border-radius: 4px 4px 4px;
   width: 120px;
-
+  z-index: 3;
+  
 
 
 }
@@ -204,6 +225,7 @@ nav{
   display: flex;
   justify-content: space-around;
   width: 40%;
+  z-index: 3;
   
 }
 
@@ -223,6 +245,7 @@ nav{
 }
 .nav-links li:hover ul{
   display: block;
+  
 }
 
 .burger{
@@ -236,6 +259,15 @@ nav{
   background-color: white;
   margin: 5px;
   transition: all 0.3s ease;
+}
+.headline{
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  font-size: 100px;
+  transform: translate(-20%, 70%);
+  color:  white; 
+  z-index: 2;
 }
 
 @media screen and (max-width: 1024px){
@@ -272,6 +304,9 @@ nav{
   .burger{
     display: block;
   }
+  .headline{
+    font-size: 75px;
+  }
 }
 
 .nav-active{
@@ -297,4 +332,137 @@ nav{
 }
 .toggle .line3{
   transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.start{
+  display: flex;
+  height: 75vh;
+  justify-content: center;
+  align-items: center;
+}
+.hero {
+  height: 80%;
+  width: 98%;
+  position: relative;
+}
+.hero img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+.hero::after{
+  content: "";
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.3; 
+}
+
+
+
+
+:root{
+    --background-grad-day: linear-gradient(#56CCF2, #2F80ED, rgb(61, 0, 160));
+    --background-grad-night: linear-gradient(#8a76ab, #7147b5, #290269);
+    --sky-blue: #D0F4FC;
+}
+
+
+.weatherTitle{
+  text-align: center;
+}
+
+.weather{
+  margin: auto;
+  height: 430px;
+  width: 320px;
+  background: var(--background-grad-day);
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+  font-family: 'Josefin Sans', sans-serif !important;
+  margin-bottom: 50px;
+}
+
+.sky{
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.sky > div{
+    margin: 0 auto;
+    border-radius: 24px;
+}
+
+.cloud-1{
+    width: 100%;
+    height: 60px;
+    background: var(--sky-blue);
+}
+
+.cloud-2{
+    width: 75%;
+    height: 55px;
+    background: white;
+    margin-top: -30px !important;
+}
+
+.cloud-3{
+    width: 60%;
+    height: 40px;
+    background: var(--sky-blue);
+    margin-top: -15px !important;
+}
+
+.icon{
+    width: 95px;
+    height: 95px;
+    border-radius: 50% !important;
+    margin-top: -50px !important;
+}
+
+#weatherIcon{
+    width: 90px;
+    height: 90px;
+    margin: auto;
+}
+
+.content{
+  margin-top: 120px;
+  text-align: center;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif !important;
+      
+}
+
+.content > h1{
+  font-size: 80px;
+  margin-left: 20px;
+}
+
+.content > h3{
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.details{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    margin-top: 0px;
+    font-weight: 300;
+    row-gap: 8px;
+}
+
+.value{
+  font-size: 34px;
+}
+
+.label{
+    font-size: 14px;
 }
