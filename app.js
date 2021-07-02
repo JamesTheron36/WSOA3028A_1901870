@@ -57,8 +57,8 @@ function addSound(item) {
 
 
 
-const weatherUrl = "http://api.openweathermap.org/data/2.5/weather?id=993800&units=metric&appid=53217561e22fa44ddb8df2b800ca3a59";
-const timeUrl = "http://worldtimeapi.org/api/timezone/Africa/Johannesburg"
+const weatherUrl = "https://api.openweathermap.org/data/2.5/weather?id=993800&units=metric&appid=53217561e22fa44ddb8df2b800ca3a59";
+const timeUrl = "https://worldtimeapi.org/api/timezone/Africa/Johannesburg"
 
 
 const currTime = document.getElementById('time');
