@@ -59,7 +59,7 @@ function addSound(item) {
 
 const weatherUrl = "https://api.openweathermap.org/data/2.5/weather?id=993800&units=metric&appid=53217561e22fa44ddb8df2b800ca3a59";
 const timeUrl = "https://worldtimeapi.org/api/timezone/Africa/Johannesburg"
-
+const NYtimes = "https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=dozZiEtt7m3tik6iY73Uh56DlHCKNysP"
 
 const currTime = document.getElementById('time');
 const maxTemp = document.getElementById('maxTemp');
@@ -69,6 +69,12 @@ const humidity = document.getElementById('hum');
 const description = document.getElementById('desc');
 const icon = document.getElementById('weatherIcon');
 const weatherCard = document.getElementById('weatherCard');
+
+const titles = Array.from(document.getElementsByClassName('articleTitle'));
+const authors = Array.from(document.getElementsByClassName('articleAuthor'));
+const abstracts = Array.from(document.getElementsByClassName('articleAbstract'));
+const articleLinks = Array.from(document.getElementsByClassName('articleLink'));
+
 
 let sunrise = 0;
 let sunset = 0;
@@ -80,6 +86,26 @@ let desc = "";
 let time = 0;
 let cond = "";
 let strTime = ""
+
+
+function FetchNYTimesData(){
+	fetch(NYtimes).then(res => {
+		if(res.ok){
+			return res.json();
+		}
+		else{
+			console.log("failure");
+		}
+	}).then(data => {
+		for(var loop = 0; loop < 10; loop++){
+			authors[loop].innerHTML = data.results[loop].byline;
+			titles[loop].innerHTML = data.results[loop].title;
+			abstracts[loop].innerHTML = data.results[loop].abstract;
+			var link = data.results[loop].url;
+			articleLinks[loop].setAttribute("href", link);
+		}
+	})
+}
 
 function FetchWeatherData(){
 	fetch(weatherUrl).then(res => {
@@ -254,6 +280,7 @@ function UpdateTimeModule(str){
 
 
 app();
+FetchNYTimesData();
 FetchTimeData();
 setInterval(function(){ FetchTimeData(); }, 63000);
 

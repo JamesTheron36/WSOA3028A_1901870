@@ -464,5 +464,29 @@ nav{
 }
 
 .label{
-    font-size: 14px;
+  font-size: 14px;
+}
+
+.news{
+  background-color: #64dfdf;
+  width: auto;
+  margin-bottom: 25px;
+}
+
+.news h2{
+  text-align: center;
+  font-size: 24px;
+}
+.news h3{
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.news h4{
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 5px;
+}
+.newsTitle{
+  text-align: center;
 }

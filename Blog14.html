@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Ron James's Spell Palace</title>
+</head>
+<body>
+
+	<nav>
+		<div class = "greeting"> 
+			<h4>Good evening</h4>
+		</div>
+		<ul class= "nav-links">
+			<li>
+				<a href="index.html">Home</a>
+			</li>
+			<li>
+				<a href="Blogs.html">Blogs</a>
+				<ul>
+					<li><a href="Blog1.html">Blog 1</a></li>
+					<li><a href="Blog2.html">Blog 2</a></li>
+					<li><a href="Blog3.html">Blog 3</a></li>
+					<li><a href="Blog4.html">Blog 4</a></li>
+					<li><a href="Blog5.html">Blog 5</a></li>
+					<li><a href="Blog6.html">Blog 6</a></li>
+					<li><a href="Blog7.html">Blog 7</a></li>
+					<li><a href="Blog8.html">Blog 8</a></li>
+					<li><a href="Blog9.html">Blog 9</a></li>
+					<li><a href="Blog10.html">Blog 10</a></li>
+					<li><a href="Blog11.html">Blog 11</a></li>
+					<li><a href="Blog12.html">Blog 12</a></li>
+					<li><a href="Blog13.html">Blog 13</a></li>
+					<li><a href="Blog14.html">Blog 14</a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="about.html">About</a>
+			</li>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+		</ul>
+		<div class = "burger">
+			<div class = "line1"></div>
+			<div class = "line2"></div>
+			<div class = "line3"></div>
+		</div>
+	</nav>
+
+<header class = "logo">
+	<h1>Ron James's Spell Palace</h1>
+	<h2>For Wizards of All Exps</h2>
+</header>
+
+<article class = "blog">
+	<h2>Dependency on Interface</h2>
+	<p>
+        Interfaces are all the rage in today’s age of information. Layers upon layers of abstraction allow us to easily comprehend the lower levels of complex data operations. Looking at humans from the outside, you would think everybody is some sort of wizard with the level of complex data crunching, magical routines we execute day to day when we whip out our smartphones and hit play on that youtube video or login on Twitter. But all these complex operations and data fetches are made possible by the creation of more user-friendly interfaces. The learned sorcerers that came before us foresaw in their crystal ball that we may not be as capable in digital magic so they developed a layer of abstraction so that us mere mortals may scratch the surface of what’s possible. For instance, when you tap the play button on your preferred music streaming application, it always has an easily recognisable triangular button that represents the visual user interface that is easy to operate. Under the hood, you’re executing several lines of code that execute the functionality you just invoked but it’s all neatly hidden behind the play button. Thus a layer of abstraction is formed and an interface we can depend on is provided.
+    </p>
+    <p>
+        An application programming interface, or API, is another type of slightly lower level interface if compared to that of a play button. But it’s another essential in the overall construction of the magical digital experience. An API allows for a connection between pieces of software which allows for the sharing of data. This acts as a layer of abstraction as the data is parsed so that it goes from being mere ones and zeros to be easily readable data in JSON or XML format which is easy to understand. 
+    </p>
+    <p>
+        Many web pages use API’s to fetch data from external sources which is then used for various purposes. This very website uses three different open API’s to get data which is then dynamically displayed in some of the modules displayed on the home page. Specifically the weather card and the list of article links. The first bit of data comes from a source called World Time API. This merely provides the current time in Johannesburg in a format called ‘Unix time’ which is the number of seconds that have passed since January 1st, 1970. This data is then converted into the hours and minutes format and displayed on the time section of the weather card. The next API that is called upon is one provided by Open Weather Map, which provides seven pieces of live weather data to be displayed on the weather card. This also allows the page to determine whether Johannesburg is currently experiencing night or day as the API provides the current day’s sunrise and sunset times which is then compared to the current time. This is then displayed on the cards by changing the background colour on the card as well as switching between the sun and moon icons depending on the time of day. Other data pulled from this API includes the current relative humidity (as a percentage), the current temperature (in degrees celsius), the current minimum and maximum temperatures (also in degrees celsius) and a short description of the current weather conditions. The icon is also set to change to show a basic visual to match the conditions. For instance, if the weather is listed as cloudy, the sun icon will change to a cloudy sun icon.
+    </p>
+    <p>
+        This weather module which displays the current weather conditions in Johannesburg specifically is intended to give the user a bit of insight into what is currently going on in Joburg as this is where Ron James is currently based. Aspects of the site are intended to reflect this Johannesburg setting as the geographic location has a large impact on anybody’s lifestyle. 
+    </p>
+    <p>
+        The third and Final API which provides data for Ron James’s Spell Palace is the New York time’s open API. This is set up to provide the links, titles, abstracts and authors names for the top 10 most popular articles in the technology section of the New York Times. Since the majority of the content available on Ron James’s Spell Palace is about the magical wonders of modern technology, it seems appropriate to provide users with more reading material on the subject. The section is titled “The Latest Articles in the World of Magic” to go along with the general magic metaphor used for modern technology. 
+    </p>
+    <p>
+        The technological world depends on interfaces to allow the average user to operate the complex sorcery involved with the digital world. Data is fetched from far away places under the sun to come together and form a cohesive informational experience for all to enjoy.    
+    </p>
+			
+</article>
+
+
+
+<footer>
+	<nav>
+		<ul class = blog-nav>
+			<li>
+				<a href="Blog13.html">Previous Post</a>
+			</li>
+			<li>
+				<a href="Blogs.html">Next Post</a>
+			</li>
+		</ul>
+	</nav>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
