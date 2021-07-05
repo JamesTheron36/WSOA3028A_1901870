@@ -281,6 +281,12 @@ nav{
   body{
     overflow-x: hidden;
   }
+  .prev h3{
+    font-size: 15px;
+  }
+  .prev a{
+    font-size: 9px;
+  }
   .nav-links{
     position: absolute;
     right: 0px;
